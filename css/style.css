@@ -1,0 +1,330 @@
+/* Navbar */
+.navbar {
+  background: linear-gradient(135deg, #000000, #434343); /* Deep gradient */
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #f5b501; /* Gold border for a luxurious touch */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+  position: relative; /* Ensure button is positioned relative to navbar */
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.2rem; /* Slightly larger for emphasis */
+  color: #fff;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-right: auto; /* Pushes the brand to the left */
+  display: flex;
+  align-items: center; /* Center vertically */
+}
+
+#animated-text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 80px;
+}
+
+.navbar-toggler {
+  margin-left: auto; /* Aligns the toggler to the right */
+}
+
+.navbar-collapse {
+  margin-left: auto; /* Aligns the collapse items to the right */
+}
+
+.nav-link {
+  font-family: 'Poppins', sans-serif;
+  color: #dcdcdc; /* Softer grey color for text */
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Added text-shadow transition */
+}
+
+.nav-link:hover {
+  color: #f5b501; /* Gold hover effect */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow on hover */
+}
+
+.nav-link.active {
+  color: #f5b501; /* Active link color */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.nav-btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.7rem 2rem; /* Increased padding for a more prominent button */
+  border-radius: 30px; /* Rounded button */
+  border: 2px solid #f5b501; /* Gold border */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: absolute; /* Position button outside of container */
+  right: 2rem; /* Adjust as needed */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Center vertically */
+}
+
+.nav-btn:hover {
+  background-color: #f5b501; /* Gold background on hover */
+  color: #000; /* Black text on hover */
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(135deg, #000000, #434343); /* Deep gradient */
+  color: #fff;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.banner-content p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* Card Styles */
+.cards-section {
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
+  padding: 3rem 0;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6));
+  color: #fff; /* Ensure text is visible on the gradient background */
+}
+
+.card-img-top {
+  height: 200px; /* Adjust height as needed */
+  object-fit: cover;
+  filter: brightness(50%); /* Darken image to make text more readable */
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.75rem; /* Larger size for more emphasis */
+  font-weight: 700; /* Bold for prominence */
+  color: #f5b501; /* Gold color for luxury feel */
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); /* Adding text shadow for a glowing effect */
+  letter-spacing: 1px; /* Slightly spaced out letters */
+}
+
+.btn-outline-light {
+  color: #f5b501;
+  border-color: #f5b501;
+  font-family: 'Poppins', sans-serif; /* Updated font family */
+  font-weight: 600; /* More prominent font weight */
+}
+
+.btn-outline-light:hover {
+  background-color: #f5b501;
+  color: #000;
+}
+
+/* Unique Animation */
+@keyframes bounceScale {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.05) translateY(-15px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Animation Class */
+.animate {
+  animation: bounceScale 0.6s ease;
+}
+
+/* Photo Gallery Section */
+.photo-gallery {
+  background: linear-gradient(to bottom right, #000000, #434343);
+  color: #fff;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #f5b501;
+}
+
+/* Container for the photo gallery items */
+.gallery-grid {
+  position: relative;
+  height: 600px; /* Adjust height as needed */
+}
+
+.gallery-item {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 200px; /* Fixed width for uniform size */
+  height: 200px; /* Fixed height for uniform size */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Example of positioning for gallery items */
+.gallery-item:nth-child(1) { top: 10%; left: 5%; }
+.gallery-item:nth-child(2) { top: 20%; left: 40%; }
+.gallery-item:nth-child(3) { top: 50%; left: 10%; }
+.gallery-item:nth-child(4) { top: 60%; left: 50%; }
+.gallery-item:nth-child(5) { top: 30%; left: 70%; }
+.gallery-item:nth-child(6) { top: 70%; left: 25%; }
+.gallery-item:nth-child(7) { top: 10%; left: 60%; }
+.gallery-item:nth-child(8) { top: 40%; left: 80%; }
+
+.gallery-item:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Footer Styles */
+.footer {
+  background: linear-gradient(135deg, #1a1a1a, #333333); /* Deep gradient */
+  color: #fff;
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+  border-top: 4px solid #f5b501; /* Gold border for luxury */
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.footer-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #f5b501;
+  position: relative;
+  z-index: 1;
+}
+
+.list-unstyled {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-unstyled li {
+  margin-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.list-unstyled i {
+  color: #f5b501;
+  margin-right: 0.5rem;
+}
+
+.social-links {
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.social-icon {
+  color: #f5b501;
+  font-size: 2rem; /* Larger icons for visibility */
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.social-icon:hover {
+  color: #fff; /* White hover effect */
+  transform: scale(1.2); /* Enlarge icon on hover */
+}
+
+.footer .text-center p {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #dcdcdc;
+  z-index: 1;
+}
+
+/* Add a subtle shimmer effect */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.footer-title::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.2) 75%);
+  animation: shimmer 1.5s infinite;
+}
+
+/* Keyframes for Bounce Animation */
+@keyframes bounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
